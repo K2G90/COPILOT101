@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-inner">
+        <h1>Task Manager</h1>
+        <button id="dark-mode-toggle" type="button" aria-pressed="false">
+          Dark Mode
+        </button>
+      </div>
+    </header>
+    <main>
+      <section class="task-form-section">
+        <form id="task-form">
+          <label for="task-input">Enter a new task:</label>
+          <input
+            type="text"
+            id="task-input"
+            name="task"
+            required
+            aria-describedby="task-help"
+          />
+          <small id="task-help">Press Enter or click Add Task to submit.</small>
+          <button type="submit">Add Task</button>
+        </form>
+      </section>
+      <section class="filter-section">
+        <h2>Filter Tasks</h2>
+        <div class="filter-buttons">
+          <button id="filter-all" class="filter-btn active">All Tasks</button>
+          <button id="filter-completed" class="filter-btn">Completed</button>
+          <button id="filter-pending" class="filter-btn">Pending</button>
+        </div>
+      </section>
+      <section class="task-list-section">
+        <h2>Your Tasks</h2>
+        <ul id="task-list" aria-label="List of tasks"></ul>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
