@@ -199,9 +199,14 @@ body.dark label,
 body.dark small,
 body.dark .task-text,
 body.dark .filter-btn,
-body.dark .task-delete,
-body.dark #dark-mode-toggle {
+body.dark .task-delete {
   color: #f3f3f3;
+}
+
+body.dark #dark-mode-toggle {
+  background-color: #444;
+  color: #f3f3f3;
+  border-color: #666;
 }
 
 body.dark input[type="text"] {
