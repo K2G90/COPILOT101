@@ -16,8 +16,29 @@
       </div>
     </header>
     <main>
+      <section class="list-form-section">
+        <form id="list-form">
+          <label for="list-name-input">Create a new list:</label>
+          <input
+            type="text"
+            id="list-name-input"
+            name="listName"
+            placeholder="Enter list name"
+            required
+            aria-describedby="list-help"
+          />
+          <small id="list-help"
+            >Press Enter or click Create List to add a new task list.</small
+          >
+          <button type="submit">Create List</button>
+        </form>
+      </section>
       <section class="task-form-section">
         <form id="task-form">
+          <label for="list-select">Select list:</label>
+          <select id="list-select" name="listSelect" required>
+            <option value="">Choose a list...</option>
+          </select>
           <label for="task-input">Enter a new task:</label>
           <input
             type="text"
@@ -38,9 +59,8 @@
           <button id="filter-pending" class="filter-btn">Pending</button>
         </div>
       </section>
-      <section class="task-list-section">
-        <h2>Your Tasks</h2>
-        <ul id="task-list" aria-label="List of tasks"></ul>
+      <section class="lists-section">
+        <div id="lists-container"></div>
       </section>
     </main>
     <script src="script.js"></script>
