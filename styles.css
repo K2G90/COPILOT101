@@ -129,7 +129,7 @@ main {
 }
 
 main::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -137,10 +137,19 @@ main::before {
   bottom: 0;
   border-radius: 16px;
   padding: 1px;
-  background: linear-gradient(135deg, var(--gold-dark), var(--primary), var(--gold-dark));
-  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  background: linear-gradient(
+    135deg,
+    var(--gold-dark),
+    var(--primary),
+    var(--gold-dark)
+  );
+  mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
   mask-composite: xor;
-  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
   opacity: 0.3;
   pointer-events: none;
